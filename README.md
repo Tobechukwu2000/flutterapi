@@ -1,37 +1,86 @@
-PYPI Link: https://pypi.org/project/flwave/
+
+![Logo](https://i.postimg.cc/9Q0y8PtC/White-and-Black-Minimalist-Elegant-Boutique-Logo-cropped.png)
+
+
+# FLWAVE LIBRARY
 
 This Library Enables Easy Integration of Standard Flutterwave API into a python project New or Existing. It contains functions to initiate and Verify Transaction(s).
 
-INSTALLATION:
+## Installation
 
 To install the package via pip use:
 
-* pip install flwave
+```bash
+  pip install flwave
+```
+    
+## Usage/Examples
+1. To Initiate a transaction:
 
-FUNCTIONS IN LIBRARY:
+```javascript
+from flwave import flwaveapi
+```
 
-1. create_tranaction
-2. verify_transaction
-3. make_refund
-4. transaction_details
+2. To Verfify A Transaction Using Transaction Reference:
 
-HOW TO USE:
-1. To Initiate a transaction: * from flwave import flwaveapi
- 
-2. To Verfify A Transaction  Using Transaction Reference: * from flwaveapi import verify_transaction
+```javascript
+from flwaveapi import verify_transaction
+```
 
-3. To Verify a Transaction using Transaction ID: * from flwaveapi import verfify_transaction
+3. To Verify a Transaction using Transaction ID:
 
-4. To Create Refund for a transaction: from flwaveapi import make_refund
+```javascript
+from flwaveapi import verfify_transaction
+```
 
-5. To get transaction details (Single or Multiple): from flwaveapi import transaction_details 
+4. To Create Refund for a transaction:
+
+```javascript
+from flwaveapi import make_refund
+```
+
+5. To get transaction details (Single or Multiple):
+
+```javascript
+from flwaveapi import transaction_details
+```
 
 
-for more info visit Flutterwave official API Docs: https://developer.flutterwave.com 
 
-The repository for this code is hosted on https://github.com/josh2297/ feel free to reach out to the creator for pull request and other possible questions regarding the use of this library.
 
-Note: This is an open source project and is licensed using the MIT-style licensing standard.
+
+## LIBRARY FUNCTIONS
+
+| Funtion |Required Arguments     | Description                |
+| :-------- | :------- | :------------------------- |
+| `create_transaction` | key`string`, amount`float`, e-mail`string`, redirect_url`string`, url`string`|This function makes a POST request to flutterwave payment API and returns a unique payment link.
+| `verify_transaction`|  key`string` |This function makes a GET request to flutterwave verify Transaction API and returns a Dict Containing Details of Transaction. |
+| `make_refund` | key`string`, txn_id`int` |  This function makes a POST request to make a refund in a disputed Transaction.|
+| `transaction_details` |key`string` | This function makes a GET request to flutterwave and returns a Dict Containing Details of Transaction. |
+
 
 The Output of each Function above is a python dictionary.This dictionary should be parsed to retrieve needed information.
+## Contributing
+
+Contributions are always welcome!
+
+Please feel free to reach out to the creator for pull request and other possible questions regarding the use of this library.
+
+
+## Documentation
+For more info visit Flutterwave official API Docs: 
+
+[Documentation](https://developer.flutterwave.com)
+
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+## Appendix
+
+PYPI Link: https://pypi.org/project/flwave/
+
+
 
