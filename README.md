@@ -1,8 +1,11 @@
+PYPI Link: https://pypi.org/project/flwave/
+
 This Library Enables Easy Integration of Standard Flutterwave API into a python project New or Existing. It contains functions to initiate and Verify Transaction(s).
 
 INSTALLATION:
 
 To install the package via pip use:
+
 * pip install flwave
 
 FUNCTIONS IN LIBRARY:
