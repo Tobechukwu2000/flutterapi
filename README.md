@@ -24,25 +24,25 @@ from flwave import flwaveapi
 2. To Verfify A Transaction Using Transaction Reference:
 
 ```javascript
-from flwaveapi import verify_transaction
+from flwave.flwaveapi import verify_transaction
 ```
 
 3. To Verify a Transaction using Transaction ID:
 
 ```javascript
-from flwaveapi import verfify_transaction
+from flwave.flwaveapi import verfify_transaction
 ```
 
 4. To Create Refund for a transaction:
 
 ```javascript
-from flwaveapi import make_refund
+from flwave.flwaveapi import make_refund
 ```
 
 5. To get transaction details (Single or Multiple):
 
 ```javascript
-from flwaveapi import transaction_details
+from flwave.flwaveapi import transaction_details
 ```
 
 
